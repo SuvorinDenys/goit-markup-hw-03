@@ -1,0 +1,133 @@
+:root {
+  --brand-color: #2196f3;
+  --main-color: #000000;
+  --second-main-color: #ffffff;
+  --secondary-color: #212121;
+  --contacts-color-header: #757575;
+  --contacts-color-footer: #ffffff99;
+  --background-color-main: #2f303a;
+  --background-color-second: #ffffff;
+  --background-color-third: #f5f4fa;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* Logo */
+.logo-header {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.logo-header:focus,
+.logo-header:hover {
+  text-decoration: underline var(--brand-color);
+}
+.web-header {
+  color: var(--brand-color);
+}
+.studio-header {
+  color: var(--main-color);
+}
+/* End of Logo */
+
+/* Header */
+.header {
+  background-color: var(--background-color-second);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.header-list a {
+  color: var(--secondary-color);
+}
+.header-list a:hover,
+.header-list a:focus {
+  color: var(--brand-color);
+}
+.header-contatcs-list a {
+  color: var(--contacts-color-header);
+}
+.header-contatcs-list a:hover,
+.header-contatcs-list a:focus {
+  color: var(--brand-color);
+}
+/* End of Header */
+
+/* Hero Section */
+.hero-section {
+  background-color: var(--background-color-main);
+}
+.hero-header {
+  color: var(--background-color-second);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero-button {
+  color: var(--second-main-color);
+  background-color: var(--brand-color);
+  cursor: pointer;
+  border: 4px solid var(--brand-color);
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.hero-button:hover,
+.hero-button:focus {
+  border: 4px solid var(--brand-color);
+  border-radius: unset;
+}
+
+/* Features & Our Work */
+.second-backgroun-color {
+  background-color: var(--background-color-second);
+}
+.features {
+  display: none;
+}
+.features-list {
+  columns: 4;
+}
+.features-header {
+  color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.features-paragraph {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.our-work {
+  color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.our-work-items {
+  columns: 3;
+}

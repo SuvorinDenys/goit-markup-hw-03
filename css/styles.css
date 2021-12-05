@@ -20,6 +20,20 @@ li {
 a {
   text-decoration: none;
 }
+img {
+  display: block;
+}
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 /* Logo Header */
 .logo-header {
@@ -29,6 +43,8 @@ a {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .logo-header:focus,
 .logo-header:hover {
@@ -43,16 +59,41 @@ a {
 /* End of Logo Header */
 
 /* Header */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
 .header {
   background-color: var(--background-color-second);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  border-bottom: 1px solid #ececec;
 }
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+  margin-left: 93px;
+  margin-right: 331px;
+}
+
 .header-list a {
   color: var(--secondary-color);
+  display: block;
+  padding-bottom: 32px;
+  padding-top: 32px;
 }
+.header-list li:not(:last-child) {
+  margin-right: 50px;
+}
+
 .header-list a:hover,
 .header-list a:focus {
   color: var(--brand-color);
@@ -60,12 +101,19 @@ a {
 .header-list .current {
   color: var(--brand-color);
 }
+
 .header-contatcs-list a {
   color: var(--contacts-color-header);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
+
 .header-contatcs-list a:hover,
 .header-contatcs-list a:focus {
   color: var(--brand-color);
+}
+.header-contatcs-list a:not(:last-child) {
+  margin-right: 50px;
 }
 /* End of Header */
 

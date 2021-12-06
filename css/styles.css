@@ -36,12 +36,13 @@ a {
 }
 img {
   display: block;
+  max-width: 100%;
 }
 .container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px red solid;
+  /* outline: 1px red solid; */
   /* padding-left: 15px;
   padding-right: 15px; */
 }
@@ -369,10 +370,19 @@ img {
 .block-list {
   display: flex;
   flex-wrap: wrap;
+  margin-top: -30px;
+  margin-right: -30px;
+}
+.block-list > .block {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-top: 30px;
+  margin-right: 30px;
 }
 .block {
-  width: 370px;
   border: 1px solid var(--border-block-portfolio-page);
+}
+.sub-block {
+  margin: 20px 24px;
 }
 .block-header {
   color: var(--secondary-color);
@@ -386,5 +396,6 @@ img {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+  margin-top: 4px;
 }
 /* End of Blocks */

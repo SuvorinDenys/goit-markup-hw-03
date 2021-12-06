@@ -297,11 +297,12 @@ img {
   background-color: var(--background-color-main);
 }
 .address-list {
-  display: block;
+  display: flex;
+  flex-direction: column;
   margin-left: 15px;
 }
-.address-list p a:not(:last-child) {
-  margin-bottom: 9px;
+.contacts-mail-tel {
+  margin-top: 9px;
 }
 .address {
   color: var(--second-main-color);

@@ -90,6 +90,7 @@ img {
 .nav-list {
   display: flex;
   align-items: center;
+  padding-left: 15px;
 }
 
 .header-list {
@@ -214,7 +215,7 @@ img {
 }
 .our-work-images-list {
   display: flex;
-  padding-left: 0px;
+  padding-left: 15px;
 }
 .our-work-images-list li:not(:last-child) {
   margin-right: 30px;
@@ -225,6 +226,19 @@ img {
 .our-team-section {
   background-color: var(--background-color-third);
 }
+.cards {
+  background-color: var(--background-color-second);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.our-team-list {
+  display: flex;
+  padding-left: 15px;
+}
+.our-team-list li:not(:last-child) {
+  margin-right: 30px;
+}
 .our-team-header {
   color: var(--secondary-color);
   font-weight: 700;
@@ -232,6 +246,7 @@ img {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 .our-team-list-item-header {
   color: var(--secondary-color);
@@ -240,6 +255,7 @@ img {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 30px;
 }
 .our-team-list-item-paragraph {
   color: var(--contacts-color-header);
@@ -247,6 +263,8 @@ img {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 /* End of Team */
 
@@ -258,6 +276,9 @@ img {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-left: 15px;
 }
 .logo-footer:focus,
 .logo-footer:hover {
@@ -274,6 +295,13 @@ img {
 /* Footer */
 .background-color-footer {
   background-color: var(--background-color-main);
+}
+.address-list {
+  display: block;
+  margin-left: 15px;
+}
+.address-list p a:not(:last-child) {
+  margin-bottom: 9px;
 }
 .address {
   color: var(--second-main-color);

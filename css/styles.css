@@ -10,6 +10,20 @@
   --background-color-third: #f5f4fa;
   --border-block-portfolio-page: #eeeeee;
 }
+
+/* Reset Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0px;
+}
+/* End of Reset Styles */
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--secondary-color);
@@ -27,8 +41,9 @@ img {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  outline: 1px red solid;
+  /* padding-left: 15px;
+  padding-right: 15px; */
 }
 .section {
   padding-top: 94px;
@@ -62,7 +77,6 @@ img {
 .main-header {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
 }
 .header {
   background-color: var(--background-color-second);
@@ -82,6 +96,7 @@ img {
   display: flex;
   margin-left: 93px;
   margin-right: 331px;
+  padding-left: 0px;
 }
 
 .header-list a {
@@ -106,6 +121,7 @@ img {
   color: var(--contacts-color-header);
   padding-top: 32px;
   padding-bottom: 32px;
+  padding-right: 0px;
 }
 
 .header-contatcs-list a:hover,
@@ -121,6 +137,11 @@ img {
 .hero-section {
   background-color: var(--background-color-main);
 }
+.hero-section-container {
+  width: 696px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
 .hero-header {
   color: var(--background-color-second);
   font-weight: 900;
@@ -129,6 +150,7 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 .hero-button {
   color: var(--second-main-color);
@@ -144,6 +166,7 @@ img {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  margin: 0 auto;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -158,7 +181,12 @@ img {
 .features {
   display: none;
 }
-
+.features-list {
+  display: flex;
+}
+.features-list li:not(:last-child) {
+  margin-right: 30px;
+}
 .features-header {
   color: var(--secondary-color);
   font-weight: 700;
@@ -166,6 +194,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .features-paragraph {
   color: var(--contacts-color-header);
@@ -180,6 +209,15 @@ img {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+.our-work-images-list {
+  display: flex;
+  padding-left: 0px;
+}
+.our-work-images-list li:not(:last-child) {
+  margin-right: 30px;
 }
 /* End of Features & Our Work */
 

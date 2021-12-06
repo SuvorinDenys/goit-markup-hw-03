@@ -167,6 +167,7 @@ img {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  padding: 10px 32px;
   margin: 0 auto;
 }
 .hero-button:hover,
@@ -331,6 +332,14 @@ img {
 }
 
 /* Buttons */
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+.filter-list li:not(:last-child) {
+  margin-right: 8px;
+}
 .filter-buttons {
   color: var(--secondary-color);
   background-color: var(--background-color-third);
@@ -343,6 +352,7 @@ img {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  padding: 6px 22px;
 }
 .filter-buttons:focus,
 .filter-buttons:hover {
@@ -356,6 +366,10 @@ img {
 /* End of Buttons */
 
 /* Blocks */
+.block-list {
+  display: flex;
+  flex-wrap: wrap;
+}
 .block {
   width: 370px;
   border: 1px solid var(--border-block-portfolio-page);

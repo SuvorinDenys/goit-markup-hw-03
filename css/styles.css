@@ -184,8 +184,10 @@ img {
 .features {
   display: none;
 }
+
 .features-list {
   display: flex;
+  padding-left: 0px;
 }
 .features-list li:not(:last-child) {
   margin-right: 30px;
@@ -217,6 +219,7 @@ img {
 .our-work-images-list {
   display: flex;
   padding-left: 15px;
+  padding-bottom: 94px;
 }
 .our-work-images-list li:not(:last-child) {
   margin-right: 30px;
@@ -250,6 +253,10 @@ img {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
+.our-team-name-subsection {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .our-team-list-item-header {
   color: var(--secondary-color);
   font-weight: 500;
@@ -257,7 +264,6 @@ img {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 30px;
 }
 .our-team-list-item-paragraph {
   color: var(--contacts-color-header);
@@ -265,8 +271,7 @@ img {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 10px;
-  margin-bottom: 30px;
+  padding-top: 10px;
 }
 /* End of Team */
 
@@ -340,7 +345,8 @@ img {
 .filter-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
+  padding-left: 0px;
 }
 .filter-list li:not(:last-child) {
   margin-right: 8px;
@@ -377,6 +383,8 @@ img {
   margin-top: -30px;
   margin-right: -30px;
   padding-bottom: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .block-list > .block {
   flex-basis: calc(100% / 3 - 30px);
@@ -385,9 +393,10 @@ img {
 }
 .block {
   border: 1px solid var(--border-block-portfolio-page);
+  max-width: 370px;
 }
 .sub-block {
-  margin: 20px 24px;
+  padding: 20px 24px;
 }
 .block-header {
   color: var(--secondary-color);

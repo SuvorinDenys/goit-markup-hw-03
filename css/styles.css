@@ -138,7 +138,7 @@ img {
 /* Hero Section */
 .hero-section {
   background-color: var(--background-color-main);
-  padding: 200px 452px;
+  padding: 200px;
 }
 .hero-section-container {
   width: 696px;

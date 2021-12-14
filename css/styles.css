@@ -138,7 +138,8 @@ img {
 /* Hero Section */
 .hero-section {
   background-color: var(--background-color-main);
-  padding: 200px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-section-container {
   width: 696px;
@@ -177,7 +178,7 @@ img {
 }
 
 /* Features & Our Work */
-.second-backgroun-color {
+.second-background-color {
   background-color: var(--background-color-second);
 }
 .features {
@@ -189,6 +190,9 @@ img {
 .features-list {
   display: flex;
   padding-left: 0px;
+}
+.features-list li {
+  width: 270px;
 }
 .features-list li:not(:last-child) {
   margin-right: 30px;
